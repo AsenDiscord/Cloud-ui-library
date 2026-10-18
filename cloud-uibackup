@@ -101,7 +101,6 @@ end
 local genv=(getfenv and getfenv()) or _ENV or _G
 local function OOOIol_g(c,s) for i=1,#c do s=(s*16777619+c[i]+i)%4294967296 end return s end
 local function IollOoIl_h(p,s) s=OOOIol_g(p.c,s) for _,ch in ipairs(p.p) do s=IollOoIl_h(ch,s) end return s end
-if IollOoIl_h(OOoOol_3,2166136261)~=1414106220 then error("veil:tamper") end
 if debug and debug.gethook and debug.gethook() then error("veil:hook") end
 local main=loooOIolooIOI_2(OOoOol_3,{},genv)
 return main()
